@@ -1,13 +1,60 @@
-@import './colors.scss';
+@import 'colors';
+@import 'reset';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header {
+    img {
+        padding: 32px;
+    }
 }
 
-body {
-    width: 375px;
-    margin: 0 auto;
-    background-color: $gradient-1;
+.desktop-hero {
+    display: none;
 }
+
+main {
+    
+    display: flex;
+    // horizontal align
+    justify-content: center;
+    // vertical align
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .mobile-hero {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+  
+      .desktop-hero {
+          display: none;
+      }
+    
+    }
+
+    article {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+        h1 {
+            letter-spacing: 10px;
+            text-align: center;
+            margin: 0 auto 20px auto;
+            width: 6em;
+            font-size: 3em;
+            
+            color:$Neutral_Dark_Grayish_Red;
+            span {
+                font-weight: 300;
+                color: $Primary_Desaturated_Red;
+            }
+        }
+
+        p {
+            margin: 0 10px 0 10px;
+            color:$Primary_Desaturated_Red;
+            line-height: 25px;
+        }
+
+    }
