@@ -24,6 +24,10 @@ img {
   height: auto;
 }
 
+body {
+  background: linear-gradient(135deg, white, #fff5f5);
+}
+
 header img {
   padding: 32px;
 }
@@ -66,8 +70,41 @@ article h1 span {
 }
 article p {
   margin: 0 10px 0 10px;
+  padding: 12px;
   color: #ce9797;
   line-height: 25px;
+}
+
+.form-mobile {
+  margin-top: 1em;
+  padding: 0;
+}
+.form-mobile input {
+  border-radius: 24px;
+  color: #ce9797;
+  border: solid 1px #ce9797;
+  height: 45px;
+  width: 75%;
+  padding: 12px;
+  background: linear-gradient(135deg, white, #fff5f5);
+}
+
+::placeholder {
+  color: #ce9797;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  position: absolute;
+  border: none;
+  width: 60px;
+  height: 45px;
+  border-radius: 22px;
+  margin-left: -44px;
+  cursor: pointer;
+}
+.submit-button img {
+  margin-bottom: -3px;
 }
 
 /*# sourceMappingURL=style.css.map */
