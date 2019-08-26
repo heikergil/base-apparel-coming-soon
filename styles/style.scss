@@ -2,32 +2,30 @@
 @import 'reset';
 
 body {
-    background: $gradient-1;
-}
-header {
-    img {
-        padding: 32px;
-    }
-}
+        background: $gradient-1;
 
-.desktop-hero {
-    display: none;
-}
 
-main {
-    
-    display: flex;
-    // horizontal align
+    main {
+        display: flex;
+        // horizontal align
     justify-content: center;
     // vertical align
     align-items: center;
     flex-direction: column;
     text-align: center;
+    header {
+        align-self: flex-start;
+        
+        img {
+            
+            padding: 32px;
+            
+        }
+    }
+}
 
     .mobile-hero {
         width: 100%;
-        padding: 0;
-        margin: 0;
     }
   
       .desktop-hero {
@@ -92,10 +90,63 @@ main {
         height: 45px;
         border-radius: 22px;
         margin-left: -44px;
-        cursor: pointer;
-        
+        transition: all 0.3s ease 0s;
+                
         img {
             margin-bottom: -3px;
         }
 
     }
+
+    .submit-button:hover {
+        transform: translateX(7px);
+    }
+
+
+
+    @media only screen and (min-width: 768px) {
+
+        
+        body {
+            height: 100%;
+            background: url('../images/bg-pattern-desktop.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+          grid-template-columns: 1.5fr 1fr;
+          grid-template-areas: "info" "image";
+
+          main {
+              grid-area: "info";
+          }
+ 
+            header {
+                 display: flex;
+                grid-column-start: 1;
+                grid-column-end: 2;
+
+                img {
+                    align-self: flex-start;
+                }
+
+            }
+                   
+                  .mobile-hero {
+                display: none;
+                }
+        
+                .desktop-hero {
+                max-width: 700px;
+                height: 100%;
+                justify-self: stretch;
+                display: block;
+                grid-area: "image";
+
+             
+        }
+
+    
+    }
+           
+}
+    
