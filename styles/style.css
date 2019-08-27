@@ -24,6 +24,18 @@ img {
   height: auto;
 }
 
+.hidden {
+  display: none;
+}
+
+.red_border {
+  border: solid 1px red;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   background: linear-gradient(135deg, white, #fff5f5);
 }
@@ -115,6 +127,7 @@ article p {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-areas: "info" "image";
+    grid-template-rows: 1fr;
   }
   body main {
     grid-area: "info";
@@ -136,6 +149,22 @@ article p {
     justify-self: stretch;
     display: block;
     grid-area: "image";
+  }
+}
+form p {
+  margin-left: 10%;
+  float: left;
+}
+form .error-icon {
+  z-index: 1;
+  position: relative;
+  right: 80px;
+  top: 6px;
+}
+@media only screen and (min-width: 768px) {
+  form .error-icon {
+    right: 80px;
+    bottom: -20.5%;
   }
 }
 

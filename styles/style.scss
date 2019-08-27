@@ -1,9 +1,19 @@
 @import 'colors';
 @import 'reset';
 
-body {
-        background: $gradient-1;
+.hidden {
+    display:none;
+}
 
+.red_border {
+border: solid 1px red;
+}
+html {
+    height: 100%;
+}
+
+body { 
+        background: $gradient-1;
 
     main {
         display: flex;
@@ -115,6 +125,7 @@ body {
             display: grid;
           grid-template-columns: 1.5fr 1fr;
           grid-template-areas: "info" "image";
+          grid-template-rows: 1fr;
 
           main {
               grid-area: "info";
@@ -150,3 +161,24 @@ body {
            
 }
     
+
+form  {
+    p {
+        margin-left: 10%;
+        float:left;
+    
+    }
+
+    .error-icon {
+        z-index: 1;
+        position: relative;
+        right: 80px;
+        top: 6px;
+
+        @media only screen and (min-width: 768px) {
+            right: 80px;
+            bottom: -20.5%;
+        }
+        
+        }
+}
