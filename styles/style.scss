@@ -51,7 +51,7 @@ body {
             letter-spacing: 10px;
             text-align: center;
             margin: 0 auto 20px auto;
-            width: 6em;
+            width: 70%;
             font-size: 3em;
             color:$Neutral_Dark_Grayish_Red;
             @media only screen and (min-width: 768px) {
@@ -142,9 +142,7 @@ body {
                 align-self: flex-start;
                 display: flex;
                 margin-bottom: 15%;
-                border: red solid 1px;
-
-                img {
+                  img {
                     
                     align-self: flex-start;
                 }

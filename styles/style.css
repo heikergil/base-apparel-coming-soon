@@ -67,7 +67,7 @@ article h1 {
   letter-spacing: 10px;
   text-align: center;
   margin: 0 auto 20px auto;
-  width: 6em;
+  width: 70%;
   font-size: 3em;
   color: #413a3a;
 }
@@ -149,7 +149,6 @@ article p {
     align-self: flex-start;
     display: flex;
     margin-bottom: 15%;
-    border: red solid 1px;
   }
   body header img {
     align-self: flex-start;
