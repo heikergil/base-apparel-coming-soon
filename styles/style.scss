@@ -1,7 +1,6 @@
 @import 'colors';
 @import 'reset';
 
-
 .hidden {
     display:none;
 }
@@ -62,6 +61,7 @@ body {
             width: 70%;
             font-size: 3em;
             color:$Neutral_Dark_Grayish_Red;
+            margin-top: 25px;
             @media only screen and (min-width: 768px) {
                 text-align: left;
                 padding-left: 20px;
@@ -104,6 +104,8 @@ body {
            
             
         input {
+            min-width: 250px;
+            float: left;
             border-radius: 24px;
             color: $Primary_Desaturated_Red;
             border: solid 1px $Primary_Desaturated_Red;
@@ -126,8 +128,12 @@ body {
         width: 60px;
         height: 45px;
         border-radius: 22px;
-        margin-left: -44px;
+        margin-left: -19%;
         transition: all 0.3s ease 0s;
+
+        @media only screen and (min-width: 768px) { 
+            margin-left: -8.9%;
+        }
                 
         img {
             margin-bottom: -3px;
@@ -193,12 +199,12 @@ form  {
     .error-icon {
         z-index: 1;
         position: relative;
-        right: 80px;
-        top: 6px;
+        right: 28%;
+        top: 11px;
 
         @media only screen and (min-width: 768px) {
-            right: 80px;
-            bottom: -20.5%;
+            right: 33%;
+            top: 11px;
         }
         
         }
